@@ -11,7 +11,7 @@ semaphore *semInit(int initialCount) {
    new = malloc(sizeof(semaphore));
    if (new == NULL) {
       /* malloc() failed */
-      exit(0)
+      exit(0);
    }
    pthread_mutex_init(&(new->semaMutex), NULL);
    pthread_cond_init(&(new->semaWait), NULL);
